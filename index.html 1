@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Boost</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1b2a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #1b263b;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #00b4d8;
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            font-size: 0.9rem;
+            color: #e0e1dd;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 15px 0 5px 0;
+            font-size: 0.95rem;
+            color: #a2d2ff;
+        }
+        select, input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #415a77;
+            border-radius: 8px;
+            background-color: #0d1b2a;
+            color: white;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        select:focus, input:focus {
+            outline: none;
+            border-color: #00b4d8;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #00b4d8;
+            color: #0d1b2a;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #0096c7;
+        }
+        .ad-box {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Social Boost</h1>
+        <div class="subtitle">නොමිලේම Likes, Followers සහ Views ලබාගන්නා ලංකාවේ අංක 1 ඇප් එක 🚀</div>
+
+        <label>Social Media ජාලය තෝරන්න:</label>
+        <select id="platform">
+            <option value="facebook">Facebook</option>
+            <option value="tiktok">TikTok</option>
+            <option value="instagram">Instagram</option>
+            <option value="youtube">YouTube</option>
+        </select>
+
+        <label>ඔබට අවශ්‍ය සේවාව:</label>
+        <select id="service">
+            <option value="likes">Free Likes (ක්ෂණිකව)</option>
+            <option value="followers">Free Followers (ක්ෂණිකව)</option>
+            <option value="views">Free Views (ක්ෂණිකව)</option>
+        </select>
+
+        <label>Post හෝ Profile Link එක ඇතුළත් කරන්න:</label>
+        <input type="url" id="userLink" placeholder="https://..." required>
+
+        <button onclick="startBoost()">Get Free Boost</button>
+    </div>
+
+    <div class="ad-box">
+        <script src="https://accuracyinstalled.com/ff/f2/55/fff255553f949cacd7dec38e996c056e.js"></script>
+    </div>
+
+    <script>
+        function startBoost() {
+            var urlInput = document.getElementById('userLink').value;
+            
+            if(urlInput.trim() === "") {
+                alert("කරුණාකර නිවැරදි Link එකක් ඇතුළත් කරන්න!");
+                return;
+            }
+
+            alert("ඔබේ ඉල්ලීම සාර්ථකයි! Boost එක සක්‍රීය කිරීමට මීළඟට පෙනෙන දැන්වීම් පිටුවේ තත්පර 15ක් රැඳී සිටින්න.");
+
+            // ඔයා එවපු Adsterra Direct Link එක මම මෙතනට නිවැරදිව ඇතුළත් කළා
+            var adsterraLink = "https://accuracyinstalled.com/dfqtgb0x?key=b12ad89e95fd18229debae06736f6393";
+
+            // මේ කෝඩ් එකෙන් ඇඩ් එක Chrome බ්‍රවුසර් එකෙන් වෙනම ඕපන් කරයි
+            window.open(adsterraLink, '_system');
+            window.open(adsterraLink, '_blank');
+        }
+    </script>
+
+</body>
+</html>
